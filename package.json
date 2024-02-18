@@ -1,0 +1,22 @@
+{
+  "name": "immich-r2-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "@types/range-parser": "^1.2.7",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.28.3"
+  },
+  "dependencies": {
+    "range-parser": "^1.2.1"
+  }
+}

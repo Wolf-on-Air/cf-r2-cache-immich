@@ -1,0 +1,15 @@
+name = "immich-cache"
+main = "worker.ts"
+compatibility_date = "2024-02-18"
+
+r2_buckets = [
+    { binding = "CACHE_BUCKET", bucket_name = "immich-cache", preview_bucket_name = "immich-cache"}
+]
+
+[vars]
+ALLOWED_ORIGINS = "immich.example.com"
+IMAGE_REGEX = "^api/asset/(file|thumbnail)/.*$|^[\\da-f]{8-}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12}$"
+IMAGE_REGEX_POST = "^api/download/asset/.*$"
+CACHE_CONTROL = "private"
+IMAGE_HOST = "immich.example.com"
+PARAMS_KEY = "format,isThumb,isWeb"
